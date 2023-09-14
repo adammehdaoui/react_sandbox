@@ -1,5 +1,6 @@
 import '../styles/Banner.css'
 import logo from '../assets/logo.png'
+import Recommendation from './Recommendation'
 
 function Banner() {
     return (
