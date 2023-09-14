@@ -1,4 +1,5 @@
 import { plantList } from '../datas/plantList.js'
+import CareScale from './CareScale'
 
 function ShoppingList(){
     // v1
@@ -29,7 +30,8 @@ function ShoppingList(){
                 {plantList.map((plant) => (
                     <li key={`${plant.id}`}>
                         { plant.name } &nbsp;
-                        { plant.isBestSale && <span>🔥</span> }
+                        { plant.isBestSale && <span>🔥</span> } &nbsp;
+                        <CareScale scaleValue={plant.light} />
                         {/* plant.isBestSale ? <span>🔥</span> : <span>🤮</span> */}
                     </li>
                 ))}
