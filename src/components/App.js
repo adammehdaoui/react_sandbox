@@ -1,10 +1,11 @@
 import Banner from './Banner'
+import Cart from './Cart'
 
 function App() {
   return (
     <div className="App">
-      <h2> Application magasin_jungle_2 </h2>
-      <Banner/>
+      <Banner />
+      <Cart />
     </div>
   );
 }
