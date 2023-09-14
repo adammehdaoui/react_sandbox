@@ -1,11 +1,11 @@
 import '../styles/Cart.css'
 
-function Cart() {
-    const title = 'Mon panier'
-    const tulipe_price = 5;
-    const rose_price = 2;
-    const marguerite_price = 8;
+const title = 'Mon panier'
+const tulipe_price = 5;
+const rose_price = 2;
+const marguerite_price = 8;
 
+function Cart() {
     return (
         <div className='lmj-cart'>
             <h2>{title}</h2>
