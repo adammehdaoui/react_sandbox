@@ -1,5 +1,5 @@
 import { plantList } from '../datas/plantList.js'
-import CareScale from './CareScale'
+import PlantItem from './PlantItem.js'
 
 function ShoppingList(){
     // v1
@@ -22,20 +22,11 @@ function ShoppingList(){
         <div>
             <ul>
                 {categories.map((cat, index) => (
-                    <li key={`${cat}-${index}`}>{ cat } </li>
+                    <li key={`${cat}-${index}`}>{ cat }</li>
                 ))}
             </ul>
 
-            <ul>
-                {plantList.map((plant) => (
-                    <li key={`${plant.id}`}>
-                        { plant.name } &nbsp;
-                        { plant.isBestSale && <span>🔥</span> } &nbsp;
-                        <CareScale scaleValue={plant.light} />
-                        {/* plant.isBestSale ? <span>🔥</span> : <span>🤮</span> */}
-                    </li>
-                ))}
-            </ul>
+            <PlantItem plantList = { plantList } />
         </div>
     )
 }

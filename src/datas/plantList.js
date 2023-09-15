@@ -5,7 +5,7 @@ export const plantList = [
 		id: '1ed',
         isBestSale: true,
 		water: 30,
-		light: 1
+		light: 0
 	},
 	{
 		name: 'ficus lyrata',
@@ -44,7 +44,7 @@ export const plantList = [
 		category: 'extérieur',
 		id: '6uo',
         isBestSale: true,
-		water: 30,
+		water: 3,
 		light: 2
 	},
 	{
@@ -52,7 +52,7 @@ export const plantList = [
 		category: 'extérieur',
 		id: '7ie',
         isBestSale: false,
-		water: 30,
+		water: 5,
 		light: 7
 	},
 	{
@@ -60,7 +60,7 @@ export const plantList = [
 		category: 'plante grasse',
 		id: '8fp',
         isBestSale: true,
-		water: 30,
+		water: 1,
 		light: 35
 	},
 	{
@@ -68,7 +68,7 @@ export const plantList = [
 		category: 'plante grasse',
 		id: '9vn',
         isBestSale: true,
-		water: 25,
+		water: 5,
 		light: 2
 	}
 ]
