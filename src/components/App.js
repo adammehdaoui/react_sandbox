@@ -1,17 +1,17 @@
 import Banner from './Banner'
-import Cart from './Cart'
 import Recommendation from './Recommendation';
+import Cart from './Cart';
 import ShoppingList from './ShoppingList'
 
 function App() {
-  return (
-    <div className="App">
-      <Banner />
-      <Cart />
-      <Recommendation />
-      <ShoppingList />
-    </div>
-  );
+	return (
+		<div>
+			<Banner />
+			<Cart />
+      		<Recommendation />
+			<ShoppingList />
+		</div>
+	)
 }
 
 export default App;
