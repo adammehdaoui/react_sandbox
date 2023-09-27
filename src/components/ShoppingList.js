@@ -1,5 +1,6 @@
 import { plantList } from '../datas/plantList.js'
 import PlantItem from './PlantItem.js'
+import '../styles/ShoppingList.css'
 
 function ShoppingList(){
     const categories = plantList.reduce(
@@ -29,7 +30,5 @@ function ShoppingList(){
     )
 }
 
-
-
-export default ShoppingList;
+export default ShoppingList
 

@@ -1,0 +1,6 @@
+.lmj-plant-list {
+	list-style-type: none;
+	padding: 32px;
+	flex-wrap: wrap;
+	max-width: 800px;
+}

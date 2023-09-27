@@ -9,4 +9,4 @@ function Recommentation() {
         <h3 className='lmj-reco'>Ce n'est pas le moment de rempoter</h3>);
 }
 
-export default Recommentation;
+export default Recommentation
