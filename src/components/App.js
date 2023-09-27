@@ -8,9 +8,11 @@ function App() {
 	return (
 		<div>
 			<Banner />
-			<Cart />
-      		<Recommendation />
-			<ShoppingList />
+			<div className='lmj-layout-inner'>
+				<Cart />
+				<Recommendation />
+				<ShoppingList />
+			</div>
 			<Footer />
 		</div>
 	)

@@ -9,7 +9,7 @@ function ShoppingList(){
         ,[]);
 
     return(
-        <div>
+        <div className='lmj-shopping-list'>
             <ul>
                 {categories.map((cat, index) => (
                     <li key={`${cat}-${index}`}>{ cat }</li>
@@ -23,6 +23,7 @@ function ShoppingList(){
                         name={plant.name}
                         water={plant.water}
                         light={plant.light}
+                        cover={plant.cover}
                     />
                 ))}
             </ul>
