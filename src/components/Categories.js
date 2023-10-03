@@ -12,8 +12,9 @@ function Categories({ activeCategory, setActiveCategory, categories }){
                 {categories.map((cat, index) => (
                     <option key={`${cat}-${index}`}>{ cat }</option>
                 ))}
-
             </select>
+
+            <button onClick={() => setActiveCategory('')}>Réinitialiser</button>
         </div>
     )
 }

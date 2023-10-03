@@ -47,6 +47,9 @@
 }
 
 .lmj-cart-closed > button {
+	margin-left: 32px;
+    margin: 10px;
 	cursor: pointer;
+    width: 100%;
 	color: black;
 }

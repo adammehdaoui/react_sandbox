@@ -11,6 +11,24 @@ function ShoppingList({ cart, updateCart }){
             !accumulateur.includes(plant.category) ? accumulateur.concat(plant.category) : accumulateur
         ,[]);
 
+    function addToCart(name, price){
+        const plantInCart = cart.find((plant) => plant.name === name);
+
+        if(plantInCart){
+            const otherPlants = cart.filter((plant) => plant.name !== name);
+
+            updateCart([
+                ...otherPlants,
+                { name, price, amount: plantInCart.amount + 1}
+            ])
+        } else {
+            updateCart([
+                ...cart,
+                { name, price, amount: 1}
+            ])
+        }
+    }
+
     return(
         <div className='lmj-shopping-list'>
             <Categories 
@@ -23,7 +41,7 @@ function ShoppingList({ cart, updateCart }){
                 {plantList.map((plant) => 
                     !activeCategory || activeCategory === plant.category ? (
                     
-                        <div id={plant.id}>
+                        <div key={plant.id}>
                             <PlantItem 
                                 key={plant.id}
                                 name={plant.name}
@@ -31,7 +49,7 @@ function ShoppingList({ cart, updateCart }){
                                 light={plant.light}
                                 cover={plant.cover}
                             />
-                            <button onClick={() => updateCart(cart + 1)}>Ajouter</button>
+                            <button onClick={() => addToCart(plant.name, plant.price)}>Ajouter</button>
                         </div>
 
                     ) : null
