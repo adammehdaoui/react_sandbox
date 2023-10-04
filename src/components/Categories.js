@@ -8,7 +8,7 @@ function Categories({ activeCategory, setActiveCategory, categories }){
                 onChange={(e) => setActiveCategory(e.target.value)}
                 className='lmj-categories-select'
             >
-                <option key ={'default'} value=''>-----</option>
+                <option key ={'default'} value=''>---</option>
                 {categories.map((cat, index) => (
                     <option key={`${cat}-${index}`}>{ cat }</option>
                 ))}
