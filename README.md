@@ -1,1 +1,0 @@
-# Exercice OpenClassrooms : Magasin jungle (React.js)
